@@ -1,0 +1,59 @@
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Description</th> 
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td>ls - list directory contents</td>
+    <td>List  information about the FILEs (the current directory by default).  Sort entries alpha-
+       betically if none of -cftuvSUX nor --sort is specified.
+</td> 
+    <td>sp1a@rpi20:~ $ ls
+readme  services  tmp
+</td>
+  </tr>
+
+  <tr>
+    <td>echo - display a line of text</td>
+    <td>Echo the STRING(s) to standard output.</td> 
+    <td>sp1a@rpi20:~ $ echo derp
+derp
+</td>
+  </tr>
+<tr>
+    <td>date - print or set the system date and time</td>
+    <td>Display the current time in the given FORMAT, or set the system date.</td> 
+    <td>sp1a@rpi20:~ $ date
+Mon 29 Apr 09:28:13 PDT 2019
+</td>
+  </tr>
+<tr>
+    <td>passwd - change user password</td>
+    <td>The passwd command changes passwords for user accounts. A normal user may only change the
+       password for his/her own account, while the superuser may change the password for any
+       account.  passwd also changes the account or associated password validity period.
+</td> 
+    <td>sp1a@rpi20:~ $ passwd
+Changing password for sp1a.
+(current) UNIX password:
+</td>
+  </tr>
+<tr>
+    <td>arch - print machine hardware name (same as uname -m</td>
+    <td>Print machine architecture.</td> 
+    <td>sp1a@rpi20:~ $ arch
+armv7l
+</td>
+  </tr>
+<tr>
+    <td>printenv - print all or part of environment</td>
+    <td>Print  the  values of the specified environment VARIABLE(s).  If no VARIABLE is specified,
+       print name and value pairs for them all.
+</td> 
+    <td>sp1a@rpi20:~/scripts $ printenv PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+</td>
+  </tr>
+<tr>
+    <td>ps - report a
