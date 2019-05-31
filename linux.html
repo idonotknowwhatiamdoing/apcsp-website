@@ -1,0 +1,103 @@
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Description</th> 
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td>ls - list directory contents</td>
+    <td>List  information about the FILEs (the current directory by default).  Sort entries alpha-
+       betically if none of -cftuvSUX nor --sort is specified.
+</td> 
+    <td>sp1a@rpi20:~ $ ls
+readme  services  tmp
+</td>
+  </tr>
+
+  <tr>
+    <td>echo - display a line of text</td>
+    <td>Echo the STRING(s) to standard output.</td> 
+    <td>sp1a@rpi20:~ $ echo derp
+derp
+</td>
+  </tr>
+<tr>
+    <td>date - print or set the system date and time</td>
+    <td>Display the current time in the given FORMAT, or set the system date.</td> 
+    <td>sp1a@rpi20:~ $ date
+Mon 29 Apr 09:28:13 PDT 2019
+</td>
+  </tr>
+<tr>
+    <td>passwd - change user password</td>
+    <td>The passwd command changes passwords for user accounts. A normal user may only change the
+       password for his/her own account, while the superuser may change the password for any
+       account.  passwd also changes the account or associated password validity period.
+</td> 
+    <td>sp1a@rpi20:~ $ passwd
+Changing password for sp1a.
+(current) UNIX password:
+</td>
+  </tr>
+<tr>
+    <td>arch - print machine hardware name (same as uname -m</td>
+    <td>Print machine architecture.</td> 
+    <td>sp1a@rpi20:~ $ arch
+armv7l
+</td>
+  </tr>
+<tr>
+    <td>printenv - print all or part of environment</td>
+    <td>Print  the  values of the specified environment VARIABLE(s).  If no VARIABLE is specified,
+       print name and value pairs for them all.
+</td> 
+    <td>sp1a@rpi20:~/scripts $ printenv PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+</td>
+  </tr>
+<tr>
+    <td>ps - report a snapshot of the current processes.</td>
+    <td>ps displays information about a selection of the active processes.  If you want a
+       repetitive update of the selection and the displayed information, use top(1) instead.
+</td> 
+    <td>sp1a@rpi20:~ $ ps -aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.6  28036  6056 ?        Ss
+</td>
+  </tr>
+<tr>
+    <td>who - show who is logged on</td>
+    <td>Print information about users who are currently logged in.</td> 
+    <td>sp1a@rpi20:~ $ who
+sp1a     pts/0        2019-04-30 08:02 (172.19.216.71)
+</td>
+  </tr>
+<tr>
+    <td>id - print real and effective user and group IDs</td>
+    <td>Print  user  and  group information for the specified USER, or (when USER omitted) for the
+       current user.
+</td> 
+    <td>uid=1002(sp1a) gid=1003(sp1a) groups=1003(sp1a),997(gpio),1007(studentgrp)</td>
+  </tr>
+<tr>
+    <td>last, lastb - show a listing of last logged in users</td>
+    <td>last  searches  back  through  the  /var/log/wtmp  file  (or the file designated by the -f
+       option) and displays a list of all users logged in (and out) since that file was  created.
+       One  or  more  usernames  and/or  ttys can be given, in which case last will show only the
+       entries matching those arguments.  Names of ttys can be abbreviated, thus last  0  is  the
+       same as last tty0.
+
+</td> 
+    <td>sp1a@rpi20:~ $ last
+sp1a     pts/0        172.19.216.71    Tue Apr 30 08:02   still logged in
+sp2a     pts/0        172.19.217.139   Mon Apr 29 10:12 - 10:45  (00:33)
+sp2a     pts/0        172.19.217.139   Mon Apr 29 09:58 - 10:11  (00:12)
+sp1a     pts/0        172.19.220.22    Mon Apr 29 08:31 - 09:28  (00:56)
+reboot   system boot  4.14.79-v7+      Wed Dec 31 16:00   still running
+reboot   system boot  4.14.79-v7+      Wed Dec 31 16:00 - 07:37 (18015+14:37)
+reboot   system boot  4.14.79-v7+      Wed Dec 31 16:00 - 09:44 (18003+16:44)
+
+wtmp begins Fri Apr  5 13:20:08 2019
+/td>
+  </tr>
+</table>
